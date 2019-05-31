@@ -1,0 +1,44 @@
+/* ColorUI 框架样式 */
+@import "components/colorui/main.wxss";
+@import "components/colorui/icon.wxss";
+/* 图标 */
+@import "utils/iconfont.wxss";
+
+/* 自定义样式 */
+.login-bg{display: flex}
+.login-swiper{flex: 1;height: 100%}
+.login-swiper .slide-image{width: 100%;height: 100%}
+.login-cnt{position: absolute;z-index: 1;top: 50%;margin-top: -180rpx;width: 100%;display: flex;flex-direction: column}
+.login-cnt .text{margin-bottom: 20px}
+.login-cnt button{margin-top: 10px}
+.cu-btn .iconfont-spin{margin-right: 10px}
+
+.wux-cell-group{margin-bottom: 20rpx}
+.wux-cell{padding: 27rpx 20rpx !important}
+.wux-cell .ccIcon{margin-right: 10rpx}
+.cu-list .ccIcon{margin-top: 20rpx}
+
+.card-hd-rt{display: flex;align-items: center}
+.card-hd-rt .name{margin-right: 10rpx}
+.cu-list {padding:0 10rpx !important}
+
+.home-tool{margin: 20rpx 0}
+
+.card-cnt{display: flex;flex-direction: column;height: 250rpx;color: white}
+.card-hd{display: flex;height: 170rpx;width: 100%}
+.card-hd>.card-lt,
+.card-hd>.card-rt{flex: 1;display: flex;flex-direction: column;justify-content: center;padding-left: 20rpx}
+.card-ft{display: flex;flex: 1}
+.card-ft>.card-lt,
+.card-ft>.card-rt{display: flex;align-items: center;flex: 1;padding-left: 20rpx}
+.card-ft .ccIcon{margin-right: 10rpx}
+.card-cnt .title{margin-right: 10rpx;display: inline-block}
+.card-cnt .num{margin-top: 10rpx}
+
+.home-swiper{height: 200rpx}
+.home-swiper swiper-item{display: flex}
+.home-swiper swiper-item image{flex: 1;margin: 0 20rpx;border-radius: 4px}
+
+.cu-list.grid [class*=ccIcon]{position: relative}
+
+.pullup{height: 90rpx;display: flex;justify-content: center;align-items: center}

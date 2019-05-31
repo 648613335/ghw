@@ -1,0 +1,13 @@
+/* .spm-list{} */
+.spm-item{display: flex;padding: 30rpx;border-top: 1rpx solid rgba(0, 0, 0, 0.1);background-color: white}
+.spm-item:first-child{border-top: 0}
+.spm-item>.lt{margin-right: 30rpx}
+.spm-img{width: 250rpx;height: 250rpx;background-position: center;background-size: cover}
+.spm-item>.rt{display: flex;flex-direction: column;justify-content: space-between;flex: 1}
+.spm-item>.rt>.title{font-size: 32rpx;display: -webkit-box;word-break: break-all;text-overflow: ellipsis;overflow: hidden;-webkit-box-orient: vertical;-webkit-line-clamp:3;
+}
+.spm-item>.rt>.bt{display: flex;justify-content: space-between;align-items: flex-end}
+.spm-item>.rt>.bt .price{color: #dd514c;font-size: 30rpx}
+.spm-item>.rt>.bt .price .num{font-size: 45rpx}
+.spm-item>.rt>.bt .stock{font-size: 30rpx}
+

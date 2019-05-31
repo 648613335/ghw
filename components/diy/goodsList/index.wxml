@@ -1,0 +1,20 @@
+<view class='spm-list' wx:for='{{data}}' wx:key='index'>
+  <view class='spm-item'>
+    <view class='lt'>
+      <view class='spm-img' style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10004.jpg);"></view>
+    </view>
+    <view class='rt'>
+      <view class='title'>{{item.title}}</view>
+      <view class='bt'>
+        <view class='lt'>
+          <view class='price'>￥
+            <text class='num'>{{item.price}}</text>
+          </view>
+        </view>
+        <view class='rt'>
+          <view class='stock'>库存{{item.stock}}件</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

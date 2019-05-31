@@ -1,0 +1,42 @@
+<scroll-view scroll-y class='scrollPage'>
+  <view class='UCenter-bg'>
+    <!-- <image src='{{avatarUrl}}' class='png' mode='widthFix'></image> -->
+    <view wx:if='{{avatarUrl}}' class='cu-avatar xl round solids' style='background-image:url({{avatarUrl}})'></view>
+    <button wx:else class='cu-avatar xl round solids' bindgetuserinfo='onBindGetUserInfo' open-type="getUserInfo">
+      <text>获取</text>
+    </button>
+    <view class='text-xl'>{{nickName}}</view>
+    <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+  </view>
+
+  <view class='btns'>
+    <diy-lattice iconList='{{iconList}}' cell='5'></diy-lattice>
+  </view>
+
+  <wux-cell-group>
+    <wux-cell title="任务中心" extra="" is-link>
+      <text class='ccIcon cc-guanbi' slot='header'></text>
+      <text slot='footer'>新手任务1</text>
+    </wux-cell>
+  </wux-cell-group>
+  <wux-cell-group>
+    <wux-cell title="身份" extra="工人" is-link>
+      <text class='ccIcon cc-guanbi' slot='header'></text>
+    </wux-cell>
+  </wux-cell-group>
+  <wux-cell-group>
+    <wux-cell title="银行卡" is-link>
+      <text class='ccIcon cc-guanbi' slot='header'></text>
+    </wux-cell>
+  </wux-cell-group>
+  <wux-cell-group>
+    <wux-cell title="意见反馈" is-link>
+      <text class='ccIcon cc-guanbi' slot='header'></text>
+    </wux-cell>
+    <wux-cell title="设置" extra="{{extra}}" is-link url='/pages/setUp/index'>
+      <text class='ccIcon cc-guanbi' slot='header'></text>
+    </wux-cell>
+  </wux-cell-group>
+
+  <view class='cu-tabbar-height'></view>
+</scroll-view>

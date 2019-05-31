@@ -1,0 +1,70 @@
+<!--pages/home/index.wxml-->
+
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">首页</view>
+</cu-custom>
+
+<view class='home-tool'>
+  <diy-card cardClass='card-style'>
+    <view slot='content'>
+      <view class='card-cnt'>
+        <view class='card-hd'>
+          <view class='card-lt'>
+            <view>
+              <text class='title'>我的工饷</text>
+              <text class='ccIcon cc-bukejian-xian'></text>
+            </view> 
+            <view class='num'>******</view>
+          </view>
+          <view class='card-rt'>
+            <view>
+              <text class='title'>我的工分</text>
+              <text class='ccIcon cc-gongkai-xian'></text>
+            </view>
+            <view class='num'>******</view>
+          </view>
+        </view>
+        <view class='card-ft'>
+          <view class='card-lt'>
+            <text class='ccIcon cc-richscan_icon'></text>
+            <text>扫一扫</text>
+          </view>
+          <view class='card-rt'>
+            <text class='ccIcon cc-erweima'></text>
+            <text>二维码</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </diy-card>
+</view>
+
+<view class='home-tool'>
+  <diy-card header='{{carToolHd}}'>
+    <view slot='right'>
+      <view class='card-hd-rt'>
+        <text class='name'>切换项目</text>
+        <text class='ccIcon cc-qiehuan'></text>
+      </view>
+    </view>
+    <view slot='content'>
+      <diy-lattice iconList='{{iconList}}' id='qwe'></diy-lattice>
+    </view>
+  </diy-card>
+</view>
+
+<view class='home-tool'>
+  <swiper indicator-dots='true' class='home-swiper' circular='true' autoplay='true' interval='4000' duration='1000'>
+    <block wx:for='{{imgUrls}}' wx:key='index' wx:for-item='item'>
+      <swiper-item>
+        <image src='{{item}}' mode='aspectFill' style='width:100%' />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+
+<!-- 日历 -->
+<view class='home-tool'>
+  <calendar1 />
+</view>

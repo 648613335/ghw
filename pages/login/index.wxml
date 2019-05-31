@@ -1,0 +1,21 @@
+<view class='login-bg' style='height:{{systemInfo.windowHeight}}px'>
+  <swiper circular='true' autoplay='true' interval='4000' duration='2000' class='login-swiper'>
+    <block wx:for='{{imgUrls}}' wx:key='index' wx:for-item='item'>
+      <swiper-item>
+        <image src='{{item}}' mode='aspectFill' class='slide-image' />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class='padding login-cnt'>
+  <diy-input type='number' placeholder='手机号' maxlength='11' bind:onChange='onMobilePhone' class='text' />
+
+  <diy-input type='password' placeholder='密码' maxlength='6' bind:onChange='onPassword' class='text' />
+
+  <button wx:if='{{!loading}}' class='cu-btn block bg-blue lg' bindtap='onLogin'>登录</button>
+  <button wx:else='{{loading}}' class='cu-btn block bg-blue lg'>
+    <text class='cuIcon-loading2 iconfont-spin'></text> 登录</button>
+
+  <wux-toast id='wux-toast' />
+</view>

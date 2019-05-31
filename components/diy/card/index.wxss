@@ -1,0 +1,11 @@
+.m-card{display: flex;min-height: 100rpx}
+.m-card>.child{flex: 1;margin: 0 20rpx;border-radius: 4px;background-color: white;overflow: hidden}
+.m-card>.child .header{height: 40rpx;border: 1rpx solid rgba(0, 0, 0, 0.1);width: 100%}
+.m-card>.child .content{display: flex}
+.m-card>.child .content .child{flex: 1;margin:20rpx 20rpx}
+.card-style{
+   background: -webkit-linear-gradient(right, #FF6E00 , #E84D07,#E84D07); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right,  #FF6E00 , #E84D07,#E84D07); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right,  #FF6E00 , #E84D07,#E84D07); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right,  #FF6E00 , #E84D07,#E84D07); /* 标准的语法 */
+}

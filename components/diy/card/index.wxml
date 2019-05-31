@@ -1,0 +1,18 @@
+<view class='m-card'>
+  <view class='child {{cardClass}}'>
+    <block wx:if='{{header.show}}'>
+      <wux-cell-group>
+        <wux-cell title="{{header.title}}" is-link='{{header.isLink}}'>
+          <view slot='footer'>
+            <text wx:if='{{header.rightText}}'>{{header.rightText}}</text>
+            <slot wx:else name='right'></slot>
+          </view>
+        </wux-cell>
+      </wux-cell-group>
+    </block>
+    <view wx:if='{{content}}' class='content'>
+      <view class='child'>{{content}}</view>
+    </view>
+    <slot wx:else name='content'></slot>
+  </view>
+</view>

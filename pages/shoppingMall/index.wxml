@@ -1,0 +1,19 @@
+<!--pages/shoppingMall/index.wxml-->
+
+<swiper indicator-dots='true' circular='true' autoplay='true' interval='4000' duration='1000'>
+  <block wx:for='{{imgUrls}}' wx:key='index' wx:for-item='item'>
+    <swiper-item>
+      <image src='{{item}}' mode='aspectFill' style='width:100%' />
+    </swiper-item>
+  </block>
+</swiper>
+<diy-goodsList data='{{goodsList}}' />
+<view wx:if='{{pullUpStatus}}' class='pullup'>
+  <text class='cuIcon-loading2 iconfont-spin'></text> 加载中</view>
+
+
+
+<!-- <movable-area style="height: 200px; width: 200px; background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area> -->

@@ -1,0 +1,10 @@
+<view class="cu-list grid col-{{cell}} no-border">
+  <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index<cell*2}}">
+    <view class="ccIcon {{item.icon}} text-{{item.color}}">
+      <view class="cu-tag badge" wx:if="{{item.badge}}">
+        <block wx:if="{{item.badge!='dot'}}">{{item.badge>99?"99+":item.badge}}</block>
+      </view>
+    </view>
+    <text>{{item.name}}</text>
+  </view>
+</view>

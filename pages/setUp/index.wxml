@@ -1,0 +1,14 @@
+<!--pages/setUp/index.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">设置</view>
+</cu-custom>
+<wux-cell-group>
+  <wux-cell title="修改手机号" extra="13382795319" is-link></wux-cell>
+  <wux-cell title="更改上一个页面数据 设置=false" extra="" is-link bindtap='onFData'></wux-cell>
+  <wux-cell title="关于我们" extra="" is-link></wux-cell>
+  <wux-cell title="联系我们" extra="" is-link></wux-cell>
+  <wux-cell title="版本说明" extra="v1.0" is-link></wux-cell>
+</wux-cell-group>
+
+<wux-button block type='light' bindtap='onCancel'>退出</wux-button>

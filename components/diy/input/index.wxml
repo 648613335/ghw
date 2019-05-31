@@ -1,0 +1,6 @@
+<view class='input-bg'>
+  <input bindinput='onChanage' value='{{value}}' maxlength='{{maxlength}}' type='{{type}}' placeholder='{{placeholder}}'></input>
+  <view wx:if='{{value}}' bindtap='onClose' class='close-icon'>
+    <text class='ccIcon cc-guanbi'></text>
+  </view>
+</view>
